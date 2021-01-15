@@ -77,6 +77,7 @@ public class GameController implements Initializable {
         //cekilenSoru.add(soru);
 
 
+
            /*
             harfButon.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -108,7 +109,6 @@ public class GameController implements Initializable {
         tahminButon1.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-
                 sorukelime  = soruKelimes.get(sayiUret());
                 index = 0;
                 kelime = sorukelime.getKelime();
