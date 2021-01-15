@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07.Oca.2021, 20:19:01
+    Author     : gizem
+*/
+
+.FonBackgraund
+{
+    -fx-background-color: #FFFFFF;
+}
+.FonBored
+{
+    -fx-border-width: 500px;
+}
+.FonBackgraund1
+{
+    -fx-background-color: #34495e;
+}

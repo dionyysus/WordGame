@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="FonBackgraund1" stylesheets="@game.CSS.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="word_game.BitirController">
+   <children>
+      <Label layoutX="4.0" layoutY="102.0" prefHeight="42.0" prefWidth="142.0" styleClass="FonBackgraund" text="Toplam Puan:">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="puanGoster" layoutX="177.0" layoutY="102.0" prefHeight="49.0" prefWidth="362.0" textFill="#fdf6f6">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="48.0" prefHeight="36.0" prefWidth="142.0" styleClass="FonBackgraund" stylesheets="@game.CSS.css" text="Oyuncu Adı: " textFill="#363036">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="adGoster" layoutX="177.0" layoutY="41.0" prefHeight="49.0" prefWidth="362.0" textFill="#fdf6f6">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

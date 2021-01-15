@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" stylesheets="@game.CSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="word_game.SoruController">
+   <children>
+      <AnchorPane fx:id="girisEkran" prefHeight="602.0" prefWidth="466.0" styleClass="FonBackgraund1" stylesheets="@game.CSS.css">
+         <children>
+            <ImageView fitHeight="143.0" fitWidth="144.0" layoutX="131.0" layoutY="180.0" onDragDetected="#dosya" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/enter.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="426.0" onDragDetected="#baslik" prefHeight="18.0" prefWidth="456.0" text="ADD QUESTIONS" textFill="#33cd43">
+               <font>
+                  <Font name="Arial Black" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ekran" layoutX="466.0" prefHeight="602.0" prefWidth="434.0" style="-fx-border-color: #000; -fx-border-image-width: 2;" styleClass="FonBackgraund" stylesheets="@game.CSS.css">
+         <children>
+            <Label alignment="CENTER" layoutX="156.0" layoutY="93.0" prefHeight="38.0" prefWidth="178.0" styleClass="FonBackgraund1" stylesheets="@game.CSS.css" text="User Login" textFill="#1dea5e">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="soruEkle" layoutX="207.0" layoutY="400.0" mnemonicParsing="false" onAction="#soruEkle" prefHeight="26.0" prefWidth="108.0" styleClass="FonBackgraund1" stylesheets="@game.CSS.css" text="Login" textFill="#24f811">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="101.0" fitWidth="93.0" layoutX="214.0" layoutY="147.0" onDragDetected="#kullaniciResim" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/login%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="36.0" layoutX="107.0" layoutY="262.0" onDragDetected="#kullanici" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/user%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="36.0" layoutX="107.0" layoutY="319.0" onDragDetected="#key" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/key.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="sifre" layoutX="169.0" layoutY="324.0" onAction="#sifre" prefHeight="26.0" prefWidth="166.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" stylesheets="@game.CSS.css" />
+            <TextField fx:id="name" layoutX="169.0" layoutY="268.0" onAction="#name" prefHeight="26.0" prefWidth="166.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
