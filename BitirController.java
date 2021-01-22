@@ -6,6 +6,8 @@
 package word_game;
 
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
@@ -18,11 +20,23 @@ public class BitirController implements Initializable {
     private Label puanGoster;
     @FXML
     private Label adGoster;
+    @FXML
+    private Label tarihLabel;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
         puanGoster.setText(String.valueOf(GameController.toplamPuan));
         adGoster.setText(GameController.isim);
-    }    
+        tarihGoster();
+        System.out.println(GameController.isim);
+
+    }
+    public void tarihGoster()
+    {
+        SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
+        Date date = new Date(System.currentTimeMillis());
+        System.out.println(formatter.format(date));
+        tarihLabel.setText(formatter.format(date));
+    }
     
 }

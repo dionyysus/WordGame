@@ -48,7 +48,7 @@ public class SoruController implements Initializable {
             Stage stage = new Stage();
             AnchorPane root = (AnchorPane) FXMLLoader.load(getClass().getResource("Sorular.fxml"));
             stage.setScene(new Scene(root));
-            stage.setTitle("Soruları ekle");
+            stage.setTitle("Giriş yap");
             stage.initModality(Modality.WINDOW_MODAL);
             stage.show();
            

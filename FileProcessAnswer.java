@@ -17,7 +17,7 @@ public class FileProcessAnswer {
         
     }
     
-    public void addAnswer(SoruKelime soru) {
+    /*public void addAnswer(SoruKelime soru) {
 
         FileWriter fileWriter;
         try {
@@ -61,5 +61,54 @@ public class FileProcessAnswer {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
+    }*/
+
+       /*
+    public void addQuestion(SoruKelime soru) {
+
+        FileWriter fileWriter;
+        try {
+            //true sonradan eklemek için var
+            fileWriter = new FileWriter(FİLE_NAME,true);
+            //gelen sorukelime objesini metine aktarır.
+            fileWriter.write(soru.getSoru() + "\n");
+            fileWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
+
+    public List<SoruKelime> getAllQuestion() {
+        List<SoruKelime> questions = new ArrayList<>();
+        try {
+            Scanner myReader = new Scanner(myFile);
+            System.out.println("Scanner islemi basarili");
+            while (myReader.hasNextLine()) {
+                String question = myReader.nextLine();
+                SoruKelime soru = new SoruKelime();
+                soru.setSoru(question);
+                questions.add(soru);
+            }
+            myReader.close();
+        } catch (FileNotFoundException exception) {
+            exception.printStackTrace();
+        }
+        return questions;
+    }
+
+    private void createFile() {
+        try {
+            myFile = new File(FİLE_NAME);
+            if (myFile.createNewFile()) {
+                System.out.println("File created: " + myFile.getName());
+            } else {
+                System.out.println("File already exists.");;
+                System.out.println(myFile.getAbsolutePath());
+            }
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }*/
+
 }

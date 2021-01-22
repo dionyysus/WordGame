@@ -21,8 +21,6 @@ public class Word_Game extends Application {
     //List<SoruKelime> sorular = new ArrayList<>();
     @Override
     public void init() throws Exception {
-        //Elemanlar burada da,start fonksiyonunda da tanımlanabilir
-        
 
         super.init();     
     }

@@ -22,7 +22,17 @@
             <Font name="Arial Black" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="adGoster" layoutX="177.0" layoutY="41.0" prefHeight="49.0" prefWidth="362.0" textFill="#fdf6f6">
+      <Label fx:id="adGoster" layoutX="177.0" layoutY="41.0" prefHeight="50.0" prefWidth="380.0" textFill="#fdf6f6">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="172.0" prefHeight="27.0" prefWidth="79.0" styleClass="FonBackgraund" stylesheets="@game.CSS.css" text="TARİH:">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tarihLabel" layoutX="114.0" layoutY="168.0" prefHeight="42.0" prefWidth="482.0" textFill="WHITE">
          <font>
             <Font name="Arial Black" size="18.0" />
          </font>

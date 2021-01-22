@@ -35,7 +35,7 @@ public class GameController implements Initializable {
     private Label puanLabel;
     
     
-    String not = "";
+    //String not = "";
     FileProcessQuestion fileProcess = new FileProcessQuestion();
 
     public static List<SoruKelime> soruKelimes = new ArrayList<>();
@@ -46,12 +46,13 @@ public class GameController implements Initializable {
  
     String kelime= null;
     String soru = null;
+
     public static int toplamPuan = 0;
     @FXML
     private TextField kelimeTahmin;
     @FXML
     private Button tahminButon1;
-    int  index = -1;
+    int  index = 0;
     @FXML
     private Label soruLabel;
 
@@ -67,27 +68,16 @@ public class GameController implements Initializable {
         System.out.println("initalize çalıştı");
        
         soruKelimes = (ArrayList<SoruKelime>) fileProcess.getAllQuestion();
-        ArrayList<String> cekilenSoru = new ArrayList<>();
+        //ArrayList<String> cekilenSoru = new ArrayList<>();
 
         sorukelime  = soruKelimes.get(sayiUret());
         kelime = sorukelime.getKelime();
         soru = sorukelime.getSoru();
         System.out.println(soru);
         soruLabel.setText(soru);
-        //cekilenSoru.add(soru);
 
-
-
-           /*
-            harfButon.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-               
-            }
-        });*/
-
-        //lambda expression
        harfButon.setOnAction(event -> {
+
             int  sayiHarf = index;
             index++;
 
@@ -106,10 +96,10 @@ public class GameController implements Initializable {
 
        });
 
-        tahminButon1.setOnAction(new EventHandler<ActionEvent>() {
+        tahminButon1.setOnAction(new EventHandler<ActionEvent>() { //digersoruyagecis
             @Override
             public void handle(ActionEvent event) {
-                sorukelime  = soruKelimes.get(sayiUret());
+                sorukelime = soruKelimes.get(sayiUret());
                 index = 0;
                 kelime = sorukelime.getKelime();
                 soru = sorukelime.getSoru();
@@ -134,7 +124,7 @@ public class GameController implements Initializable {
         int uzunluk = kelimeTahmin.getText().length();
         if(kelimeTahmin.getText().equals( kelime))
         {
-            puan+=100*uzunluk-(index*10);
+            puan+=100*uzunluk-(index*100);
             puanLabel.setText(String.valueOf(puan));
             toplamPuan+=puan;
         }
@@ -154,9 +144,6 @@ public class GameController implements Initializable {
     }
 
 
-
-
-
     @FXML
     private void bitir(ActionEvent event) throws IOException {
         //System.out.println("toplam puan:"+toplamPuan);
@@ -169,11 +156,11 @@ public class GameController implements Initializable {
 
         isim = adText.getText();
         System.out.println(isim);
+
     }
     @FXML
     private void adText(ActionEvent event) {
-        /*isim = adText.getText();
-        System.out.println(isim);*/
+
     }
 
     private class stage {

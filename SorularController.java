@@ -46,9 +46,6 @@ public class SorularController implements Initializable {
         System.out.println(soru + "     " + kelime);
         FileProcessQuestion fileProcess = new FileProcessQuestion();
         fileProcess.addQuestion(soruKelime);
-        
-        /*sk.SoruKelime(soru, kelime);
-        System.out.println("eklendi");*/
     }
 
     @FXML
